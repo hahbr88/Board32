@@ -63,7 +63,7 @@ public class BoardController {
 		return "board/update";
 	}
 	
-	@RequestMapping("/updateOk.do")
+	@PostMapping("/updateOk.do")
 	public String updateOk(WriteDTO dto, Model model) {
 		
 		model.addAttribute("result", boardService.update(dto));
